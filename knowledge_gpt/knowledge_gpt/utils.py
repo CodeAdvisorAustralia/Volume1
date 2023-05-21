@@ -125,9 +125,7 @@ def get_answer(_docs: List[Document], query: str) -> Dict[str, Any]:
     # chain = load_qa_with_sources_chain(
     #     Cohere(temperature=0), chain_type="stuff", prompt=STUFF_PROMPT  # type: ignore
     # )
-    answer = chain(
-        {"input_documents": _docs, "question": query}, return_only_outputs=True
-    )
+    answer = chain
     return answer
 
 @st.cache_data
