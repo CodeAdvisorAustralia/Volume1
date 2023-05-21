@@ -5,5 +5,5 @@ from langchain.prompts import PromptTemplate
 template = """USe your full capabilities to answer the Questions:"""
 
 STUFF_PROMPT = PromptTemplate(
-    template=template, input_variables=["summaries", "question"]
+    template=template,
 )
