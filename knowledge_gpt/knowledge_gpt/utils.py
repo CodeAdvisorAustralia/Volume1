@@ -117,7 +117,7 @@ def get_answer(_docs: List[Document], query: str) -> Dict[str, Any]:
 
     chain = load_qa_with_sources_chain(
         OpenAI(
-            temperature=0, openai_api_key=st.session_state.get("OPENAI_API_KEY")
+            temperature=0.25, openai_api_key=st.session_state.get("OPENAI_API_KEY")
         ),  # type: ignore
         chain_type="stuff",
         prompt=STUFF_PROMPT,
