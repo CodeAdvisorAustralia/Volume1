@@ -1,5 +1,5 @@
 import streamlit as st
-from openai.error import OpenAIError
+# from openai.error import OpenAIError
 
 from components.sidebar import sidebar
 from utils import (
