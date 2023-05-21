@@ -2,7 +2,7 @@ import re
 from io import BytesIO
 from typing import Any, Dict, List
 
-import docx2txt
+# import docx2txt
 import streamlit as st
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain.docstore.document import Document
@@ -19,7 +19,7 @@ from prompts import STUFF_PROMPT
 
 @st.cache_data
 def parse_docx(file: BytesIO) -> str:
-    text = docx2txt.process(file)
+#     text = docx2txt.process(file)
     # Remove multiple newlines
     text = re.sub(r"\n\s*\n", "\n\n", text)
     return text
