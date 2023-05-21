@@ -3,7 +3,7 @@ from langchain.prompts import PromptTemplate
 ## Use a shorter template to reduce the number of tokens in the prompt
 template = """ So for every question, there should be two or three answers. Always give references to certain sections like the follwoing,
 "to comply with weatherproofing there are three options, Deemed to Satisfy (H2D8), Performaance (H2P1) and the Verification method (H2V1). Which one would you like more information about?"
-ask the use what specific section are the looking for
+always ask the use what specific section are the looking for
 ---------
 
 QUESTION: How do i comply with the weatherproofing requirements, there are three answers. ?
