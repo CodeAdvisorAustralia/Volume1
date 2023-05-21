@@ -94,5 +94,5 @@ if button or st.session_state.get("submit"):
                     st.markdown(source.metadata["source"])
                     st.markdown("---")
 
-        except OpenAIError as e:
-            st.error(e._message)
+#         except OpenAIError as e:
+#             st.error(e._message)
