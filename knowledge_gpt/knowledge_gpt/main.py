@@ -79,9 +79,9 @@ if button or st.session_state.get("submit"):
 
         try:
             answer = get_answer(sources, query)
-            if not show_all_chunks:
-                # Get the sources for the answer
-                sources = get_sources(answer, sources)
+#             if not show_all_chunks:
+#                 # Get the sources for the answer
+#                 sources = get_sources(answer, sources)
 
             with answer_col:
                 st.markdown("#### Answer")
