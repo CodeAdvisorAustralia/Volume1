@@ -2,8 +2,13 @@
 from langchain.prompts import PromptTemplate
 
 ## Use a shorter template to reduce the number of tokens in the prompt
-template = """USe your full capabilities to answer the Questions:"""
+template = """USe your full capabilities to answer the Questions:
+
+QUESTION: {question}
+
+"""
 
 STUFF_PROMPT = PromptTemplate(
-    template=template,
+    template=template, input_variables=["question"]
 )
+
