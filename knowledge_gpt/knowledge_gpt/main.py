@@ -85,7 +85,7 @@ if button or st.session_state.get("submit"):
 
             with answer_col:
                 st.markdown("#### Answer")
-                st.markdown(answer["output_text"].split("SOURCES: ")[0])
+                st.markdown(answer["output_text"])
 
             # with sources_col:
             #     st.markdown("#### Sources")
