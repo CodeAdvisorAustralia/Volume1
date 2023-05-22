@@ -17,7 +17,7 @@ FINAL ANSWER: to comply with weatherproofing there are three options, Deemed to 
 
 QUESTION: {question}
 =========
-{summaries}
+
 =========
 FINAL ANSWER:"""
 
