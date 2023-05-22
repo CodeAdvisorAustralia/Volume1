@@ -2,7 +2,7 @@ from langchain.prompts import PromptTemplate
 
 ## Use a shorter template to reduce the number of tokens in the prompt
 template = """ 
-Do not mention pages, instead highlight the relevant clauses, follow the requirements of the question closely
+Do not mention pages, instead highlight the relevant references, follow the requirements of the question closely
 So for every question, there should be two or three answers. Even if the answer is,
 "to comply with weatherproofing there are three options, Deemed to Satisfy (H2D8), Performaance (H2P1) and the Verification method (H2V1). Which one would you like more information about?"
 ---------
