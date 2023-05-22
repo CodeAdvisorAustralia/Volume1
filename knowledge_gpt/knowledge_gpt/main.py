@@ -74,8 +74,8 @@ if button or st.session_state.get("submit"):
     else:
         st.session_state["submit"] = True
         # Output Columns
-        answer_col, sources_col = st.columns(2)
-        sources = search_docs(index, query)
+        answer_col, sources_col = st.columns(2) 
+       
 
         try:
             answer = get_answer(sources, query)
