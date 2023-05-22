@@ -31,7 +31,7 @@ def process_file(file_path):
         uploaded_file = BytesIO(file.read())
     return uploaded_file
 
-uploaded_file =  process_file('knowledge_gpt/data/fulldocsplit.pdf')
+uploaded_file =  process_file('knowledge_gpt/knowledge_gpt/demofile.pdf')
 
 index = None
 doc = None
