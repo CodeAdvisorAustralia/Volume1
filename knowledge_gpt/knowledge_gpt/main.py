@@ -23,7 +23,7 @@ def clear_submit():
 st.header("📖Volume One Building Code of Australia")
 
 sidebar()
-st.session_state["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]'
+st.session_state["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 from io import BytesIO
 
 def process_file(file_path):
