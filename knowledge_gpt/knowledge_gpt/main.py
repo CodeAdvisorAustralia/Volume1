@@ -96,3 +96,11 @@ if button or st.session_state.get("submit"):
 
         except OpenAIError as e:
             st.error(e._message)
+            
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
